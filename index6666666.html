@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Modal and Section -->
+
+      <section class="container_investing">
+        <div class="container_information">
+          <div class="investing_info">
+            <h3 class="investing_question">Готовы к инвестициям?</h3>
+            <p class="investing_answer">Получите бесплатную консультацию брокера!</p>
+          </div>
+          <div class="container_broker">
+            <div class="image_broker">
+              <img
+                class="img_brok"
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAkACQAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAN0A3QMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEHAP/aAAgBAQAAAAC376qdOcDQ/aZz1SiUVdd+nnDrVxTIZOyhwQYJQha7zR0xQ59WQ9xlu9DYideBKNDTIZbnM059W10EfFGfVPNln/KT2pMpHT5oKvql/nV3pnoZFS+8LMUaoxZi/OGxFp7UinQDxnls9o/VTr7/AKA4tvRlqvzpT9Y+1FwDEGnucr9B1pF9t0vhh6ghFmcwP0m+suG6jrgI59AbEkWmSqHHoAFXKvM7iSWJxCpfZJZpd04vvsInyigcAVeh89NZkX33rBD45p36G+vkST9yugYEVXnfPHrQmz6xbQzjhn/rLO/pN3K4wGCAAReY6drbHn1dN2l811PpRl90e2VzpDHCVq/M9K0kFUXKV2uxzrX1SHBk0vhQnDmHRiHJMww2dFjreY8/QJ0+eQsdDthMLlqHbBnmGdV3AyBLmPpuIZ6EHK3gHWbdX5y8W02PMkxBn8NKf1vqC1Zpi6VlVhxi7MNhesAcYct5ZT2+ue2tzu1YEcjIHoOf0JVYKnGMR6fudMhS91nn3oLEy+Kqg6jHOX1SrPZB5SJyUjhhCtZkdm2YfJYsDYY0fRkrM1ln0hqabSF0C7b9AyOX2FYn6Oe0Ls0TNqHnRxBeMKbLLadRI3LEsYRUB1X6YZAtZxpoEF0pNnYLn5zDMdB1MqVOSf6pGiFKoo5TRri+j31ZvUnhbXgpNSD4gTP5t7GsKmme2vjGeQEcsatmzoorVRRr1Nrn74IQW3c/DEjeW7FNpZsdgTnab1WUAUuXf11fFw+zgNbh0np/2WIY6luSKhU5NVQuLNevrs+LuaMlnI/emOFeOhu3/wBYtxuVJWrb4VX6OwZrmxvrObff0I8sIcfQvXFF5tZb2nnSmcIV8t+dewjiJV4yzkLjaswqssq59Mz/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAIAQIQAAAA0ACwACkElKFJIWllRIWqIQKqWACiIFKlJCiggsUlIAqLFgKlgBFIoJLH/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAIAQMQAAAAgAALAAKEAUEAUEAUIAAAFSwALLAAAAAAAAAAqAApP//EACAQAAMBAQEAAgMBAQAAAAAAAAECAwQFAAYSERMUEBX/2gAIAQEAAQIAegobf0DVbZovXoX6EZ5ubOBy6I6p0RQX5/f5ml6PbQKegRK6ftsEehL0u1NvSN8PMwcYc1szR1DRNY5MleJ0MXM6S9L+9LXtlsldOj1B9PradJdPSs+fh5PCXK4uwntzaZmHCyDL1OXrw4tBomk0V518BQfj7Ebn0HHHgciaKt5phnk2ZrYp8fDzGW4+QcoJBxRKQVc4h+tw4HiPkVFhw8GPOgUABHhfKOcsCKeslF7WBQGV8BgKAilKWF/6dZlLi5JlQoXwQIwcEFaeb117mZiyquKmetLA2tfWLmopzZYRMoQUKHzM/iK+oWNhtfaiBILGNFaXtDFZpRS/KXD5AhJBRvyS/ibFmcXO07G56pMTSahDoCCctK0pzq82iEqhUAliT5jQOGOs9A635qoAB4mZ0mZm1y1OWvNzMF99Zn8s35IcObD86fdBNw5gCgFvurVX9c/R+PacfxnLPwIA8SKGn2+1Ks7k+u2kdyfHQA+q4tHw8wwyyN8szfGIlW003P0j3Z/IZ6zYWprt1n7zdO21m7k8zhvzZQM5/eKcIxl3IcFKi7adur5JTtQti25W2Ho9vTun15dtaTPaTLPylwywLKgw2s3Zx8Vg2nPfhN8eT4xXMOdjn3Bm5I55+M7eVz8Fsm+VF8PMXMfOqhfc2naryHl4JTNTF/LPCM2Y9P2Kb5Gxx5qx2DQ2/wB9fyPMJeoAPfHb/Ihw7QM/BDIxdaezjprH0ffrZLPppp9clSB4iashV/fHbd+fHpB5ulFLvp6H0iNYtLn6FNPajrd3oW83gftNmNaGkaju8p8t40Wj317hBd2TRprTdDRk1tbXXXaJXzBwSXi1KVqjK6nksVhb+nX0MSW06cEd+rtGeLw0LbS+mmBULOzOXaVaAREFiZxZCHbx1x1mgjTNflGZfP0ebbpPpPNIc0ajtRkf8TRkVaDcuLXT2dt0X4mXsS2f3W266ruXj4k307mrECzuaGjmYKSWgBCaE5+1NeKn2yC+efPre9tWKEN4GpddrfUo83Ul6QP0VaATA+V79U+bs/rWmLXSpv8A9S3VppFtfRtq234+UBiRWbzeecD1GWoOnTv08WVI4q6I49WPRTJu5k8Rl0KMsb69WHtrYeAIadln4PRl9bb2OmfceezI636OG2a2bV97prc6ejpWnRWJV4dbN8ihWg00nVRq17u61/fn4pQJtx68eLRj0pVdUrba7tVznzdkgKW/yNs3yCmiftnyCtT4AePvhlnlSevHp502TtJ3bdq3SZIZWTrqfKWBBCGbwYx/T+kx/SYcImH0pHXjfDXAMYxmCZhCkelL9AgIfoMBAQzp/8QAMxABAAICAQMDAwMDAwMFAAAAAQIRAAMhBBIxEEFRImFxBROBQmKhIJHBMlKxIzND4fD/2gAIAQEAAz8ASTy+cX3c7fdxk+XCJVuFP1OTJ2LktI9s3uzdsblskubd0+WS+Kt4yeuENkot1yYtzTgTxfjJM51Oo1ZbwfbBmXBKRtXkyX0leZWv2+MbaGr9l85uVObXNkKZMq9i2s39IkSfcXVN8YdXojvJjgXa4H9TjP3c2a+RxnSrkEMYxak5IlLlxF/OOKYx9seckvnNetlrhTLNm6Xlye+RzeMIGt1BdNpbX2xIMYl/F+7ktcQ8leD5+MOwihfbXJ5vCyMuY9tLXAn2+cIziSV/u/yZfcPmPPPP5w2bE7Sh/wA4S032l1kujk3qe3Or6SY6NvaXyNon3Mls1k++LZfDeTlOl4vBja4eBwGlw7bUwqhxZSwV498DBPGFePQ1Rlqg/UnP2y1ac/dlG+c164RlPNdFhQVhCPBizVH4P/oxkArbw/Y+Mlf7ihG0BLvPrO5LC645PvjEnMQjSPPL/GLUmGLCq5eMjv1yhKPtmzpOpYrIpsofGOuknFjI4Xy54byVVed2Obaq8ZYc8Zy/n17sOn0S2NfB93Nm7Yr82pmzZuIxguFktkPGRjEAwkU3WSY1GJhE7pL3rwLb5yuWPu8rixZIUFA/8ZE2BGIzT8q/P4zbumCqXfNeffjI9NBsLcY2lXWEjxzd4dRp/cgfUDjqlPXJqL4kF1I8OSIBI/D691ZLisY+TG3C384YORy/2tRG+GT+fBjHTKVAPBZb/GLOLS3hp1AHtzih6Dhy5KSeK9gzZMpDNULIhb5Xlc1a7A9qzh49PPGHMUOfOR6fqu7tGEuHJgw7mgsinKfOVjhx+csOMKxtzmX5z5fU3b9uyV13UW8JjumK8HAfOdhGThznJzh6H+hrlM91cC8HhM5Cs/d6dQ8CDhevuq4yos8H3xFMc7UH5w7Y4VgrgW374sqMlk7W2gvJsJMnh+OecjtkSkx/6R/BkYgGcuF+jg5HjD05ynCS5V5SODqlGWEZTkeSX+MNkIyDhDHGNJmwotyUvLnnG5fl9H4xjCTXthKGuIUXb/vgyb9sunms5crhw4b98vkPRPI4pnhPBx6n+cuwcMuEinIm1JNjd4vS6+fn/RWecpfzg4ZWja1yRawinLXg+eMtpXzyHlw2V/24krrHhMfQox81nHJh4MDF8ueSsC7zjGOtb9uXLmj55MDpomGHoYXLPql+cBMMHTtP7HGU41/T5X3+2SntIxu1pw1agousqsWgcQv0cXFx5rDB5M4XLvnBwnoS8YbpQTm+MXpo+ierzgsvy4nNY8Fc+DOqnq75TjyWxyWjdt1yFYzRPFF8YbOoGmo2udvPw4NZWGEUp98e5LwfNYUt4F0mAJecXedx4wLsMqVe2E4SAszs6tkX5BycuhhLta5wwrO3Lzzgsn74Jjs6zTA8sx/25zrNE5TlslOElaf6efbCO6O/WXHbhCOyXyGVhBDCFDPEsM1636pHnNe36SOa2BIcuNl8l0GL5T4zXC7l7ZpiyCZ5zTH6btrNc+QOTO3hifb8ZcBvB6muOTNunRp6fWHi5PwfGHot4xc4cCUj7uX74P6nqv4lnaSJBVVkJaNuqUhqVx+2BoJHjgPwY8Ul1ZkmrSPznRdM922fPtba50X9GnbPmrjwLm3ZOtfSBdPM+5pzqNMn9zS8NIWJ/D5M/cnGMZKn9Lw4usUbzZpJSL4LvEm643KfxnWRj3x0d1z7bbQfi/Gb9OyUZ9PrlIpSMh8l+y5Fe2WlhKsd0CUW44fs04PUdHL5kjlQmvkFX549bPTh5+MScn7446Or0bRfpmL+Mk69ko+LzfLpN/UA9tgnyXjHpYcZ3UZtlFIg/wAJkGZs3CjKpe9Rzod2l1GpjEkSGHkc6bpZmyKy5JMWFfelw6nYsoxDyPImQju0bI0zjKpMfFfOBAvGOjaxeaw3QlPvO+cnuZX4Pbj5zVt6N6Xanb5CMQR+2dJqlKWsm822BeaNsu6UAlm7XNgRGPm3GOpWYqeAqsJ7emS/pnX8Jn7OmXHMgD+cPR9HnKZfl9TqOjgLzPXFH5Qpwh+jbddPf3hl9NqDwRPS4l5GYiDiP0S7fwtZtpJb5V9jCTxBr3ZPORhhbH7YOud4R2JXDzWEuQfyNJm3kNsjARmk37jkIeAw7JB8YG7UV5lWf+1E9oinoj6+ePjOZV8vr+90s+nZVKEu6GTj+mTn5qrwYRgXUVDHsLfQSsOeDC8qKAYxi85cs+iQfnAR44azugODhHO28+lM7us6eInOwMZ7JKUHAfb0PV5zl49/Ss7OviLxIRzv/TesBb7Lr8N4Q2bKHiVBh2RwaFwusPC5rg2pkL7YIubXmXzwYU8e2DCk4rNp1EyDxVhhI7dj9RwmCHOFOAXeFNZf6j0y+DYVhKSj7+jfoGecO6X5wLzuclpnDZBqUWxzp+o6Pdq2jGctchPlT2cYzn2jdhfxeR7AZY91rxVZGxxjduTnM1a1ZYaCO2TdNuaJRomXmhJMp+2aGDIc0fvsoy4w3dTtITCqr7uLHtk8mVduDFwqS5Kf6lFPEbVz2L85xnl9fOIr93FxxcMI7picRk/4+MIpJtBCj7t84gW01hGKrxVrh2hFtlmvTF2bEdkuXNf7cg8SEb8BkHf3657CVWVJD+M6rpZMZzUrh9/5M2T1S1xncnCW2Kyk3zd++R18AecF7hK4MZgYkJU59OwseM/9ba/EQv74YYeoXz8Zd184vr24aeuYv/ykUHwc85FlItt5B5Mk7ZLGiNGMhQ9rHJHUbWXDFoXg+9Zs2LcwDw3x982S1LGJb28PwGbbE1rdqBX8Yzo2amg8fnA2JEly8ZsjGUXUDGi0ry1m7TFabFsPY+c1s/25XTwv2zv74vgLHwVgId/lo+7eGrRLYxa7W3yuLrnNS5zb/jj0+X18843Ln4y5Sv5wwwy2jHVDV1ERvVK0Pj5/jIbgVLI5HX9UXuV597eKwSpeUtyMes7FKkqlW/8A5zrnSbuk3nec9kixz9V07o9P1fSRhOU+yL7S48jn6jUow0x+jyefa8/USBs2dHce2+f/ADxnXMVOkYxE4rm86rUbdmzVE7Y9yyT2M/Vv1DqJadGqJqGv3KXn3rNvSkJSWcpczw16FQuvOEtg0KHP25w16XWfF/78GMNGspGrT744mPot43L+M+qX5zxlGLwPpF07SSdrBt+OPObNM+yW3iPHd7ImSnD9uAWeELtzsAlb8yXy4bOvLErlHm+fnIEHtfpvNM1JwG3Dp5bHpJdjsbRLFqrbzq4a/wBuWiDUQ4eV/FZv26pEdJCTSLzT+M/enLZ1MmXcUx/pyMGEdUIxwjr+lOPI/Oft9LKKhKuT4awnLbNeCKV4/OPWfqOvWlxJ90nDH0pcrDCXc18Ydzx74GDhgY69Eel1ypmXP5rIR6Xo+tgtS1QZfkKyMtIM4+bb4axkxYh2lAfB/wAuTj1Vyl/c08r7GRjUDtp5a8fjO+IxeM1R+oUfNZHuqc2ru3NBYzbqmshtWiTn7cWckKOM73tvg8qU/wCXDbWs+G8jGMY614krhDU75D37Fbfi/WzLXjHDAJfxgr+c7S875emrptM9uxoiZPrNu3dPzJ8fB7GHU/o+nXsjfb3Bk+j31KTLWtX+cjIinb2yf+n3OK/2zWbIqvd5C6A+ckTj3Qe4KC+AwnEjKiNhbxd/Ga5siKKtGdXKaaWPbyLa+c20S2V3xaTzfteRjzfCc5sISIfCMjkTIs5Plp8lXx5MYs2Sd3N/CZK++yyXCeB9s0bIEdtQl/hyEy4zE+RvGTd416CeMC8bl/GIv5xlxWds86fp4d23bGOPW7ggv7USg+X5c4wP0foNkQ47ov5tc1bLjKB2yb/Dm/8ATdyM11LQ28Gd1TjSSAZPNHjNOxnKM3iNC/BRWbKpXs88fZ859bGS1Dm3j2usV1pJrtGx4PnFe4lK7D7fOb9ey9YL2rTwqPJ8Y7KJD3VTbS2/GdkpRCUQuh/PDjG0tlLwV5c/b6bTGjulNX+DEvnJx5jNPw1nW6EqfefEuc0TqO+DB+fJmjfUteyMh9zO0cSThcufjOX8udN00V3bCPwe7+DGdmiLCP8A3PlyeybKUlXyrb6m/wDStvT3zGbWE49so2eL++Rn9Mi45t6YlEL1Sbw6ZjKcztY3Q0lPxmm9AzESj2485qnrlMAqTd/jhyNy1Tbiw5Q8V8ZA2GvZMItIrT4v/fNEiQJ3eQPFjzmvTNkJzZy/OS3bnbIfq4L8/nGL3tW+PsZezQexFyq5/wBGzVMlrnKL8nGbuzs6g7/7jhzVuthIzmXPxmyTKHTR7S073lzZskynNlJ5VbXGXpx6V1O/T8xJn8cOEZtHE+T/AJMJDFMik7POPhgUex7mdbpDXBZRPAPJy1k4Se4lE8Mfb7mFzTzOk9ga5MdlLfdHxXv8rm2VGq1iUr8+7m3Y3Je7yXyGci2uAUZdS+JhhwHpZeGJjninLJX9s+qX1e7n92cv1e+cn1Z/dn92T0fqnRzjLzMi/iWDpnzzE7j8mEw+5kXIXw5rmearNUo9i+13WaSU4pfOaoLXPNc85GTXjI2RvCMeHDnnL0w+rzt/8Gf3Z/dnn6vbPP1e+f3Zy/Vn92IS5+M//8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAEDAgUDH/2gAIAQIBAT8AwWjp4nzFFS7PJgwMFOOhiLVDxTq+zD8gjjzPDn//xAAUEQEAAAAAAAAAAAAAAAAAAABw/9oACAEDAQE/AET/2Q=="
+                alt="Сергей Бекетов"
+              />
+              <span class="metka"></span>
+            </div>
+
+            <div class="broker_info">
+              <h3 class="broker_name">Сергей Бекетов</h3>
+              <p class="broker_experience">Ваш персональный брокер , стаж — 8 лет</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="container_form" id="person_information">
+          <input type="text" id="person_name" placeholder="Ваше имя" class="print_information" name="name" />
+          <input
+            type="number"
+            id="person_telephone"
+            placeholder="Ваш телефон"
+            class="print_information"
+            name="telephone"
+          />
+          <button type="submit" class="submit_button" id="button">Оставить заявку</button>
+        </form>
+        <div id="tester"></div>
+        <ul class="list_advantages">
+          <li class="advantages">
+            <svg
+              class="ebi-react-icon"
+              id="businessman"
+              width="40"
+              height="40"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_businessman)">
+                <path
+                  d="M32.667 29.333H10c-5.52 0-10 4.48-10 10v9.334c0 1.093.907 2 2 2h24.667v-3.334c0-5.013 3.733-9.146 8.56-9.866a10.029 10.029 0 014.32-5.36 9.832 9.832 0 00-6.88-2.774z"
+                  fill="url(#paint0_linear_businessman)"
+                ></path>
+                <path
+                  d="M9.6 9.6C9.6 6.933 13.645 0 21.333 0c7.646 0 11.76 6.933 11.76 9.6-.026 0-.08.027-.106.027-4.48 1.2-7.387-3.68-7.494-3.894a1.354 1.354 0 00-2.08-.293C17.76 10.693 10.213 9.68 9.6 9.6z"
+                  fill="url(#paint1_linear_businessman)"
+                ></path>
+                <path
+                  d="M31.52 12.48c-3.6 0-6.16-2.507-7.44-4.107-6.08 4.774-13.254 4.08-14.72 3.894C9.034 17.128 13.736 24 21.333 24c7.63 0 12.317-6.92 11.973-11.733-.613.16-1.2.213-1.786.213z"
+                  fill="url(#paint2_linear_businessman)"
+                ></path>
+                <path
+                  d="M59.333 42.667H56v-2A4.672 4.672 0 0051.333 36h-6.666A4.672 4.672 0 0040 40.667v2h-3.334a4.639 4.639 0 00-3.34 1.421L48 51.744l14.675-7.656a4.639 4.639 0 00-3.342-1.421zm-15.333 0v-2c0-.368.298-.667.666-.667h6.667c.368 0 .667.299.667.667v2h-8z"
+                  fill="#3D5DF2"
+                ></path>
+                <path
+                  d="M48.925 55.773a2.002 2.002 0 01-1.848 0L32 47.907v11.426A4.672 4.672 0 0036.667 64h22.666A4.672 4.672 0 0064 59.333V47.907l-15.075 7.866z"
+                  fill="#3D5DF2"
+                ></path>
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_businessman"
+                  x1="19.773"
+                  y1="29.333"
+                  x2="11.251"
+                  y2="77.461"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#B09CFF"></stop>
+                  <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_businessman"
+                  x1="21.347"
+                  y1="0"
+                  x2="18.272"
+                  y2="22.418"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#B09CFF"></stop>
+                  <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_businessman"
+                  x1="21.334"
+                  y1="8.373"
+                  x2="13.897"
+                  y2="43.141"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#B09CFF"></stop>
+                  <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                </linearGradient>
+                <clipPath id="clip0_businessman"><path fill="#fff" d="M0 0h64v64H0z"></path></clipPath>
+              </defs>
+            </svg>
+            <p class="advantages_text">
+              <span>Бесплатно.</span>Наш брокер ответит на вопросы и расскажет о возможностях в EBI Capital
+            </p>
+          </li>
+          <li class="advantages">
+            <svg
+              class="ebi-react-icon"
+              id="strategy"
+              width="40"
+              height="40"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_strategy)">
+                <path
+                  d="M35.333 0h-28A7.33 7.33 0 000 7.333v41.334A7.33 7.33 0 007.333 56h20.16a21.15 21.15 0 01-2.16-9.333c0-2.32.374-4.587 1.094-6.667a19.27 19.27 0 011.786-4 21.13 21.13 0 016.454-6.933c2.373-1.627 5.066-2.8 8-3.36V7.333A7.33 7.33 0 0035.333 0zM32 27.333a2.002 2.002 0 01-2 2 1.99 1.99 0 01-1.413-.586L26.48 26.64l-3.79 3.496c-.64.592-1.589.701-2.349.267l-3.338-1.91-5.59 5.587c-.389.392-.901.587-1.413.587a2 2 0 01-1.413-3.416l6.666-6.667a1.99 1.99 0 012.406-.323l3.394 1.942 2.595-2.395-1.728-1.728a1.997 1.997 0 011.413-3.413H30a2 2 0 012 2v6.666z"
+                  fill="url(#paint0_linear_strategy)"
+                ></path>
+                <path
+                  d="M46.667 29.333c-9.558 0-17.334 7.776-17.334 17.334C29.334 56.224 37.11 64 46.668 64 56.224 64 64 56.224 64 46.667c0-9.558-7.776-17.334-17.333-17.334zm-.334 15.334H47c2.758 0 5 2.242 5 5 0 2.168-1.397 4.002-3.333 4.693v.973a2 2 0 01-4 0v-.666h-1.334a2 2 0 010-4H47a1 1 0 000-2h-.666c-2.758 0-5-2.243-5-5 0-2.168 1.397-4.003 3.333-4.694V38a2 2 0 014 0v.667H50a2 2 0 010 4h-3.666a1 1 0 000 2z"
+                  fill="#3D5DF2"
+                ></path>
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_strategy"
+                  x1="21.333"
+                  y1="0"
+                  x2="-26.015"
+                  y2="109.896"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#B09CFF"></stop>
+                  <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                </linearGradient>
+                <clipPath id="clip0_strategy"><path fill="#fff" d="M0 0h64v64H0z"></path></clipPath>
+              </defs>
+            </svg>
+            <p class="advantages_text"><span>Поможем выбрать стратегию</span> и оптимальную сумму инвестиций</p>
+          </li>
+          <li class="advantages">
+            <svg
+              class="ebi-react-icon"
+              id="risks"
+              width="40"
+              height="40"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_risks)">
+                <path
+                  d="M9.6 12.267c0-2.667 4.045-9.6 11.733-9.6 7.646 0 11.76 6.933 11.76 9.6-.026 0-.08.026-.106.026-4.48 1.2-7.387-3.68-7.494-3.893a1.354 1.354 0 00-2.08-.293c-5.653 5.253-13.2 4.24-13.813 4.16z"
+                  fill="url(#paint0_linear_risks)"
+                ></path>
+                <path
+                  d="M24.08 11.04C18 15.813 10.827 15.12 9.36 14.933c-.325 4.862 4.376 11.734 11.973 11.734 7.63 0 12.318-6.92 11.974-11.734-3.534.923-6.91-.997-9.227-3.893z"
+                  fill="url(#paint1_linear_risks)"
+                ></path>
+                <path
+                  d="M31.216 32H10C4.485 32 0 36.485 0 42v9.333a2 2 0 002 2h24.416c-2.501-7.57-.576-15.672 4.8-21.333z"
+                  fill="url(#paint2_linear_risks)"
+                ></path>
+                <path
+                  d="M46.667 29.333c-9.558 0-17.334 7.776-17.334 17.334C29.334 56.224 37.11 64 46.668 64 56.224 64 64 56.224 64 46.667c0-9.558-7.776-17.334-17.333-17.334zm-.334 15.334H47c2.758 0 5 2.242 5 5 0 2.168-1.397 4.002-3.333 4.693v2.307a2 2 0 01-4 0v-2h-1.334a2 2 0 010-4H47a1 1 0 000-2h-.666c-2.758 0-5-2.243-5-5 0-2.168 1.397-4.003 3.333-4.694v-2.306a2 2 0 014 0v2H50a2 2 0 010 4h-3.666a1 1 0 000 2z"
+                  fill="#3D5DF2"
+                ></path>
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_risks"
+                  x1="21.347"
+                  y1="2.667"
+                  x2="18.272"
+                  y2="25.084"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#B09CFF"></stop>
+                  <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_risks"
+                  x1="21.334"
+                  y1="11.04"
+                  x2="13.897"
+                  y2="45.808"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#B09CFF"></stop>
+                  <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_risks"
+                  x1="15.608"
+                  y1="32"
+                  x2="5.006"
+                  y2="79.258"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#B09CFF"></stop>
+                  <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                </linearGradient>
+                <clipPath id="clip0_risks"><path fill="#fff" d="M0 0h64v64H0z"></path></clipPath>
+              </defs>
+            </svg>
+            <p class="advantages_text">Расскажем о возможных рисках и <span>гарантиях от EBI Сapital</span></p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <section class="section_footer">
+        <hr class="border" />
+
+        <ul class="container_footer">
+          <li>
+            <div class="logo_type">
+              <a class="compani_logo" href="/ru" aria-current="page">
+                <img
+                  class="compani_img"
+                  src="data:image/png;base64,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"
+                  alt="ebi logo icon"
+                />
+                EBI CAPITAL
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <ul class="results_fond">
+              <li><a href="#" class="footer_title">Реальные результаты фонда</a></li>
+              <li><a href="#" class="footer_title">Сколько можно заработать</a></li>
+              <li><a href="#" class="footer_title">Фонд страхования</a></li>
+              <li><a href="#" class="footer_title">Нам доверяют</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="results_fond">
+              <li><a href="#" class="footer_title">ebionline.ai</a></li>
+              <li><a href="#" class="footer_title">О EBI Capital</a></li>
+              <li><a href="#" class="footer_title">Вопросы и ответы</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="contact">
+              <li><a href="#" class="footer_contact">+44 20 8133 6806</a></li>
+              <li><a href="#" class="footer_contact">support@ebi.capital</a></li>
+            </ul>
+          </li>
+        </ul>
+        <hr class="border" />
+        <p class="copyright">Copyright ©2021 EBI CAPITAL</p>
+      </section>
+    </footer>
+
+    <!-- MODAL -->
+    <a href="#openModal">Открыть модальное окно</a>
+    <div id="openModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#close" title="Close" class="close">×</a>
+          <section class="investing">
+            <div class="container_information">
+              <div class="investing_info">
+                <h3 class="investing_question">Готовы к инвестициям?</h3>
+                <p class="investing_answer">Получите бесплатную консультацию брокера!</p>
+              </div>
+              <div class="container_broker">
+                <div class="image_broker">
+                  <img
+                    class="img_brok"
+                    src="data:image/jpeg;base64,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"
+                    alt="Сергей Бекетов"
+                  />
+                  <span class="metka"></span>
+                </div>
+                <div class="broker_info">
+                  <h3 class="broker_name">Сергей Бекетов</h3>
+                  <p class="broker_experience">Ваш персональный брокер , стаж — 8 лет</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="container_form" id="person_information">
+              <input type="text" id="person_name" placeholder="Ваше имя" class="print_information" name="name" />
+              <input
+                type="number"
+                id="person_telephone"
+                placeholder="Ваш телефон"
+                class="print_information"
+                name="telephone"
+              />
+              <button type="submit" class="submit_button" id="button">Оставить заявку</button>
+            </form>
+            <div id="tester"></div>
+            <ul class="list_advantages">
+              <li class="advantages">
+                <svg
+                  class="ebi-react-icon"
+                  id="businessman"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_businessman)">
+                    <path
+                      d="M32.667 29.333H10c-5.52 0-10 4.48-10 10v9.334c0 1.093.907 2 2 2h24.667v-3.334c0-5.013 3.733-9.146 8.56-9.866a10.029 10.029 0 014.32-5.36 9.832 9.832 0 00-6.88-2.774z"
+                      fill="url(#paint0_linear_businessman)"
+                    ></path>
+                    <path
+                      d="M9.6 9.6C9.6 6.933 13.645 0 21.333 0c7.646 0 11.76 6.933 11.76 9.6-.026 0-.08.027-.106.027-4.48 1.2-7.387-3.68-7.494-3.894a1.354 1.354 0 00-2.08-.293C17.76 10.693 10.213 9.68 9.6 9.6z"
+                      fill="url(#paint1_linear_businessman)"
+                    ></path>
+                    <path
+                      d="M31.52 12.48c-3.6 0-6.16-2.507-7.44-4.107-6.08 4.774-13.254 4.08-14.72 3.894C9.034 17.128 13.736 24 21.333 24c7.63 0 12.317-6.92 11.973-11.733-.613.16-1.2.213-1.786.213z"
+                      fill="url(#paint2_linear_businessman)"
+                    ></path>
+                    <path
+                      d="M59.333 42.667H56v-2A4.672 4.672 0 0051.333 36h-6.666A4.672 4.672 0 0040 40.667v2h-3.334a4.639 4.639 0 00-3.34 1.421L48 51.744l14.675-7.656a4.639 4.639 0 00-3.342-1.421zm-15.333 0v-2c0-.368.298-.667.666-.667h6.667c.368 0 .667.299.667.667v2h-8z"
+                      fill="#3D5DF2"
+                    ></path>
+                    <path
+                      d="M48.925 55.773a2.002 2.002 0 01-1.848 0L32 47.907v11.426A4.672 4.672 0 0036.667 64h22.666A4.672 4.672 0 0064 59.333V47.907l-15.075 7.866z"
+                      fill="#3D5DF2"
+                    ></path>
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_businessman"
+                      x1="19.773"
+                      y1="29.333"
+                      x2="11.251"
+                      y2="77.461"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B09CFF"></stop>
+                      <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_businessman"
+                      x1="21.347"
+                      y1="0"
+                      x2="18.272"
+                      y2="22.418"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B09CFF"></stop>
+                      <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_businessman"
+                      x1="21.334"
+                      y1="8.373"
+                      x2="13.897"
+                      y2="43.141"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B09CFF"></stop>
+                      <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                    </linearGradient>
+                    <clipPath id="clip0_businessman"><path fill="#fff" d="M0 0h64v64H0z"></path></clipPath>
+                  </defs>
+                </svg>
+                <p class="advantages_text">
+                  <span>Бесплатно.</span>Наш брокер ответит на вопросы и расскажет о возможностях в EBI Capital
+                </p>
+              </li>
+              <li class="advantages">
+                <svg
+                  class="ebi-react-icon"
+                  id="strategy"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_strategy)">
+                    <path
+                      d="M35.333 0h-28A7.33 7.33 0 000 7.333v41.334A7.33 7.33 0 007.333 56h20.16a21.15 21.15 0 01-2.16-9.333c0-2.32.374-4.587 1.094-6.667a19.27 19.27 0 011.786-4 21.13 21.13 0 016.454-6.933c2.373-1.627 5.066-2.8 8-3.36V7.333A7.33 7.33 0 0035.333 0zM32 27.333a2.002 2.002 0 01-2 2 1.99 1.99 0 01-1.413-.586L26.48 26.64l-3.79 3.496c-.64.592-1.589.701-2.349.267l-3.338-1.91-5.59 5.587c-.389.392-.901.587-1.413.587a2 2 0 01-1.413-3.416l6.666-6.667a1.99 1.99 0 012.406-.323l3.394 1.942 2.595-2.395-1.728-1.728a1.997 1.997 0 011.413-3.413H30a2 2 0 012 2v6.666z"
+                      fill="url(#paint0_linear_strategy)"
+                    ></path>
+                    <path
+                      d="M46.667 29.333c-9.558 0-17.334 7.776-17.334 17.334C29.334 56.224 37.11 64 46.668 64 56.224 64 64 56.224 64 46.667c0-9.558-7.776-17.334-17.333-17.334zm-.334 15.334H47c2.758 0 5 2.242 5 5 0 2.168-1.397 4.002-3.333 4.693v.973a2 2 0 01-4 0v-.666h-1.334a2 2 0 010-4H47a1 1 0 000-2h-.666c-2.758 0-5-2.243-5-5 0-2.168 1.397-4.003 3.333-4.694V38a2 2 0 014 0v.667H50a2 2 0 010 4h-3.666a1 1 0 000 2z"
+                      fill="#3D5DF2"
+                    ></path>
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_strategy"
+                      x1="21.333"
+                      y1="0"
+                      x2="-26.015"
+                      y2="109.896"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B09CFF"></stop>
+                      <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                    </linearGradient>
+                    <clipPath id="clip0_strategy"><path fill="#fff" d="M0 0h64v64H0z"></path></clipPath>
+                  </defs>
+                </svg>
+                <p class="advantages_text"><span>Поможем выбрать стратегию</span> и оптимальную сумму инвестиций</p>
+              </li>
+              <li class="advantages">
+                <svg
+                  class="ebi-react-icon"
+                  id="risks"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_risks)">
+                    <path
+                      d="M9.6 12.267c0-2.667 4.045-9.6 11.733-9.6 7.646 0 11.76 6.933 11.76 9.6-.026 0-.08.026-.106.026-4.48 1.2-7.387-3.68-7.494-3.893a1.354 1.354 0 00-2.08-.293c-5.653 5.253-13.2 4.24-13.813 4.16z"
+                      fill="url(#paint0_linear_risks)"
+                    ></path>
+                    <path
+                      d="M24.08 11.04C18 15.813 10.827 15.12 9.36 14.933c-.325 4.862 4.376 11.734 11.973 11.734 7.63 0 12.318-6.92 11.974-11.734-3.534.923-6.91-.997-9.227-3.893z"
+                      fill="url(#paint1_linear_risks)"
+                    ></path>
+                    <path
+                      d="M31.216 32H10C4.485 32 0 36.485 0 42v9.333a2 2 0 002 2h24.416c-2.501-7.57-.576-15.672 4.8-21.333z"
+                      fill="url(#paint2_linear_risks)"
+                    ></path>
+                    <path
+                      d="M46.667 29.333c-9.558 0-17.334 7.776-17.334 17.334C29.334 56.224 37.11 64 46.668 64 56.224 64 64 56.224 64 46.667c0-9.558-7.776-17.334-17.333-17.334zm-.334 15.334H47c2.758 0 5 2.242 5 5 0 2.168-1.397 4.002-3.333 4.693v2.307a2 2 0 01-4 0v-2h-1.334a2 2 0 010-4H47a1 1 0 000-2h-.666c-2.758 0-5-2.243-5-5 0-2.168 1.397-4.003 3.333-4.694v-2.306a2 2 0 014 0v2H50a2 2 0 010 4h-3.666a1 1 0 000 2z"
+                      fill="#3D5DF2"
+                    ></path>
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_risks"
+                      x1="21.347"
+                      y1="2.667"
+                      x2="18.272"
+                      y2="25.084"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B09CFF"></stop>
+                      <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_risks"
+                      x1="21.334"
+                      y1="11.04"
+                      x2="13.897"
+                      y2="45.808"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B09CFF"></stop>
+                      <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_risks"
+                      x1="15.608"
+                      y1="32"
+                      x2="5.006"
+                      y2="79.258"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B09CFF"></stop>
+                      <stop offset="1" stop-color="#3D5DF2" stop-opacity=".79"></stop>
+                    </linearGradient>
+                    <clipPath id="clip0_risks"><path fill="#fff" d="M0 0h64v64H0z"></path></clipPath>
+                  </defs>
+                </svg>
+                <p class="advantages_text">Расскажем о возможных рисках и <span>гарантиях от EBI Сapital</span></p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="/modal.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
