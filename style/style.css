@@ -202,6 +202,7 @@ header {
 }
 .header__logo {
   z-index: 100;
+  margin-left: 35px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -332,7 +333,7 @@ header {
   font-family: 'Raleway';
   margin-left: 10px;
   transition: all 0.3s;
-  padding-right: 15px;
+  padding-right: 30px;
 }
 .header__en:hover {
   color: rgb(182, 177, 177);

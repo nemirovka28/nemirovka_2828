@@ -9,9 +9,11 @@ function onClick() {
     containerPhoneMenu.classList.remove('telephone__menu--active');
     iconClose.style.display = 'none';
     iconMenu.style.display = 'block';
+    document.body.style.overflow = 'visible';
   } else {
     iconClose.style.display = 'block';
     iconMenu.style.display = 'none';
+    document.body.style.overflow = 'hidden';
     containerPhoneMenu.classList.add('telephone__menu--active');
   }
 }
