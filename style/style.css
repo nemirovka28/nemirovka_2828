@@ -1010,6 +1010,7 @@ header {
   font-style: normal;
   font-size: 42px;
   color: var(--text-primary-color);
+  padding-top: 20px;
 }
 .calc__salary {
   color: var(--text-primary-color);
@@ -1018,7 +1019,7 @@ header {
   letter-spacing: -0.02em;
   font-style: normal;
   font-size: 16px;
-  padding: 0;
+  padding: 20px 0 0;
   margin: 0;
 }
 
