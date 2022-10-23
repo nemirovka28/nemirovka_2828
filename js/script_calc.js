@@ -44,33 +44,30 @@ function onInputValue(e) {
 function onClickValute(e) {
   refs.calcChangeItem.forEach(el => {
     if (el.classList.contains('calc__change-item--active')) {
-      console.log('remove1');
       el.classList.remove('calc__change-item--active');
     }
   });
   const isChangeValue = e.target.classList.contains('calc__change-item');
   if (!isChangeValue) return;
   if (e.target.classList.contains('calc__usd')) {
-    refs.calcValute.textContent = '$';
-    refs.calc__submitValuta = '$';
-    refs.calc__submitValuta2 = '$';
+    refs.calc__submitValuta.textContent = `$`;
+    refs.calc__submitValuta2.textContent = `$`;
+    refs.calcValute.textContent = `$`;
   }
   if (e.target.classList.contains('calc__eur')) {
-    refs.calc__submitValuta.textContent = '€';
-    refs.calc__submitValuta2.textContent = '€';
-    refs.calcValute.textContent = '€';
+    refs.calc__submitValuta.textContent = `€`;
+    refs.calc__submitValuta2.textContent = `€`;
+    refs.calcValute.textContent = `€`;
   }
   if (e.target.classList.contains('calc__gbr')) {
-    refs.calc__submitValuta.textContent = '£';
-    refs.calc__submitValuta2.textContent = '£';
-    refs.calcValute.textContent = '£';
+    refs.calc__submitValuta.textContent = `£`;
+    refs.calc__submitValuta2.textContent = `£`;
+    refs.calcValute.textContent = `£`;
   }
   if (e.target.classList.contains('calc__change-item--active')) {
     e.target.classList.remove('calc__change-item--active');
-    console.log('remove2');
   } else {
     e.target.classList.add('calc__change-item--active');
-    console.log('add');
   }
 }
 refs.periodItem.forEach(el => {
