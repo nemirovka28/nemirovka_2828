@@ -310,6 +310,10 @@ header {
   background-color: var(--green-hover);
   cursor: pointer;
 }
+.header__hero-text-dtn {
+  overflow: hidden;
+  padding-top: 180px;
+}
 .header__ru {
   font-style: normal;
   font-weight: 700;
@@ -342,7 +346,6 @@ header {
 .header__hero {
   display: flex;
   padding-bottom: 60px;
-  padding-top: 180px;
 }
 @media screen and (max-width: 984px) {
   /* .header__hero {
@@ -364,13 +367,18 @@ header {
 }
 .gr1 {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -190px;
+  right: -877px;
 }
 .gr2 {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -371px;
+  right: -1107px;
+}
+.gr3 {
+  position: absolute;
+  top: -193px;
+  right: -881px;
 }
 .header__hero-btn-login {
   display: none;
@@ -429,6 +437,7 @@ header {
   line-height: 1.1em;
   color: white;
   margin-bottom: 60px;
+  padding-top: 180px;
 }
 @media screen and (max-width: 984px) {
   .header__text {
@@ -437,6 +446,78 @@ header {
 }
 .header__text-span {
   color: var(--color-blue);
+}
+
+@media screen and (max-width: 834px) {
+  .header__hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 136px;
+  }
+  .header__graphics {
+    position: relative;
+    overflow: hidden;
+    min-width: 400px;
+    min-height: 400px;
+  }
+  .gr3 {
+    position: absolute;
+    top: 0px;
+    right: 1px;
+  }
+  .gr1 {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+  }
+  .gr2 {
+    position: absolute;
+    top: 1px;
+    right: 7px;
+  }
+  .header__text {
+    padding-top: 0px;
+  }
+  .header__hero-text-dtn {
+    padding-top: 00px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .header__logo {
+    margin-left: 0px;
+  }
+  .header__text {
+    font-size: 38px;
+  }
+  .header__hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 136px;
+    align-content: center;
+    text-align: start;
+    justify-content: center;
+  }
+  .header__graphics {
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+    min-height: 300px;
+  }
+  .gr1 {
+    position: absolute;
+    top: -188px;
+    right: -316px;
+  }
+  .gr2 {
+    position: absolute;
+    top: -255px;
+    right: -421px;
+  }
+  .gr3 {
+    position: absolute;
+    top: -358px;
+    right: -985px;
+  }
 }
 .header__hero-btn {
   align-items: center;
