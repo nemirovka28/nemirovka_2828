@@ -2630,7 +2630,7 @@ a {
 }
 @media screen and (max-width: 1254px) {
   .modal {
-    height: 600px;
+    height: 100%;
     overflow: auto;
     width: auto;
   }
