@@ -10,7 +10,7 @@ open.forEach(el => {
 function onCloseBackdrop(e) {
   if (e.target == e.currentTarget) {
     modal.classList.remove('modal--active');
-    document.body.style.overflow = 'visible';
+    // document.body.style.overflow = 'visible';
   }
 }
 

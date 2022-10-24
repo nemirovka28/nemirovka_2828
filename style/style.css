@@ -2585,6 +2585,12 @@ a {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
 }
+
+@media screen and (max-width: 575px) {
+  .modal {
+    right: 20px;
+  }
+}
 .modal--active {
   display: block;
   opacity: 1;
