@@ -3,6 +3,7 @@ const modal = document.querySelector('#openModal');
 const modalCloseBakdrop = document.querySelector('.modal').addEventListener('click', onCloseBackdrop);
 const modalOpen = document.querySelector('.calc__submit-btn').addEventListener('click', onClick);
 const close = document.querySelector('.close').addEventListener('click', onClose);
+
 open.forEach(el => {
   el.addEventListener('click', onClick);
 });
