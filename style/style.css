@@ -2586,11 +2586,6 @@ a {
   transition: opacity 400ms ease-in;
 }
 
-@media screen and (max-width: 575px) {
-  .modal {
-    right: 20px;
-  }
-}
 .modal--active {
   display: block;
   opacity: 1;
@@ -2609,14 +2604,14 @@ a {
 }
 .modal-dialog {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   margin: 10px;
 }
 
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 20px auto;
   }
 }
 .modal-content {
@@ -2630,6 +2625,16 @@ a {
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (max-width: 1254px) {
+  .modal {
+    height: 600px;
+    overflow: auto;
+    width: auto;
+  }
+  .modal-dialog {
+    margin: 20px 20px;
   }
 }
 .close {

@@ -10,16 +10,16 @@ open.forEach(el => {
 function onCloseBackdrop(e) {
   if (e.target == e.currentTarget) {
     modal.classList.remove('modal--active');
-    // document.body.style.overflow = 'visible';
+    document.body.style.overflow = 'visible';
   }
 }
 
 function onClick(e) {
   e.preventDefault();
-  // document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
   modal.classList.add('modal--active');
 }
 function onClose() {
-  // document.body.style.overflow = 'visible';
+  document.body.style.overflow = 'visible';
   modal.classList.remove('modal--active');
 }
