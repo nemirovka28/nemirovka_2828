@@ -16,10 +16,10 @@ function onCloseBackdrop(e) {
 
 function onClick(e) {
   e.preventDefault();
-  document.body.style.overflow = 'hidden';
+  // document.body.style.overflow = 'hidden';
   modal.classList.add('modal--active');
 }
 function onClose() {
-  document.body.style.overflow = 'visible';
+  // document.body.style.overflow = 'visible';
   modal.classList.remove('modal--active');
 }
