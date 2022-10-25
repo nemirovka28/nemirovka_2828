@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./slick/slick.css" />
     <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./intl-tel-input-17.0.18/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="./intl-tel-input-17.0.18/build/css/demo.css">
     <title>EBI Capital</title>
   </head>
   <body>
@@ -3725,8 +3727,9 @@
       </div>
       <form class="container_form" id="person_information">
               <input type="text" id ="person_name" placeholder="Ваше имя" class="print_information" name="name">
-              <input type="number" id ="person_telephone" placeholder="Ваш телефон" class="print_information" name="telephone">
-              <button type="submit" class="submit_button1" id="button">Оставить заявку</button>
+              <!-- <input type="number" id ="person_telephone" placeholder="Ваш телефон" class="print_information" name="telephone"> -->
+              <input class="print_information" id="phone" name="phone" type="tel" >
+              <button type="submit" class="submit_button1"  id="button">Оставить заявку</button>
       </form>
       <div id="tester"></div>
       <ul class="list_advantages">
@@ -4061,6 +4064,33 @@
     <script src="./slick/slick.min.js"></script>
     <script src="./js/index.js" type="module"></script>
     <script src="./js/main.js"></script>
+    <script src="./intl-tel-input-17.0.18/build/js/intlTelInput.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        // autoPlaceholder: "off",
+        // dropdownContainer: document.body,
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        // geoIpLookup: function(callback) {
+        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+        //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //     callback(countryCode);
+        //   });
+        // },
+        // hiddenInput: "full_number",
+        // initialCountry: "auto",
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        // preferredCountries: ['cn', 'jp'],
+        // separateDialCode: true,
+        utilsScript: "./intl-tel-input-17.0.18/build/js/utils.js",
+      });
+    </script>
     <script>
       AOS.init();
     </script>
