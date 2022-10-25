@@ -2012,14 +2012,16 @@ header {
   border-radius: 5px;
   border: none;
   margin-top: 50px;
+  cursor: pointer;
+}
+.referral_button:hover {
+  background-color: var(--secondary);
 }
 .referral_capital {
   border-radius: 20px;
   position: relative;
   box-shadow: 0 2.4px 8.4px rgb(183 183 183 / 25%);
-  background-image: url('../img/5.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: var(--gradient-reverse);
 }
 
 .referral_capital_module {
@@ -2084,6 +2086,10 @@ header {
   border-radius: 4px;
   height: 70px;
   font-size: 20px;
+  cursor: pointer;
+}
+.link_button:hover {
+  background-color: var(--secondary);
 }
 @media screen and (max-width: 498px) {
   .inside_container {
@@ -2166,8 +2172,9 @@ header {
   align-items: center;
 }
 .rotate {
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 45px;
+  fill: white;
+  max-height: 45px;
   padding-left: 10px;
   transition: all 0.3s;
 }
