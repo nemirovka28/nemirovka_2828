@@ -4068,12 +4068,20 @@
     <script>
       var input = document.querySelector("#phone");
       window.intlTelInput(input, {
-        allowDropdown: false,
-        autoHideDialCode: false,
-        autoPlaceholder: "off",
-        dropdownContainer: document.body,
-        excludeCountries: ["us"],
-        formatOnDisplay: false,
+        allowDropdown: true,
+          nationalMode: false,
+          autoPlaceholder: 'aggressive',
+          formatOnDisplay: true,
+          separateDialCode: true,
+          initialCountry: "auto",
+            preferredCountries: ["ru", "by", "kz"],
+            onlyCountries: [
+                "al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+                "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is",
+                "ie", "it", "lv", "li", "lt", "lu", "mk", "mt", "md", "mc",
+                "me", "nl", "no", "pl", "pt", "ro", "ru", "sm", "rs", "sk",
+                "si", "es", "se", "ch", "gb", "tr", "cy", "ge", "kz", "az",
+                "am"],
         geoIpLookup: function(callback) {
           $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
             var countryCode = (resp && resp.country) ? resp.country : "";
@@ -4081,13 +4089,8 @@
           });
         },
         hiddenInput: "full_number",
-        initialCountry: "auto",
         localizedCountries: { 'de': 'Deutschland' },
-        nationalMode: false,
-        onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
         placeholderNumberType: "MOBILE",
-        preferredCountries: ['cn', 'jp'],
-        separateDialCode: true,
         utilsScript: "./intl-tel-input-17.0.18/build/js/utils.js",
       });
     </script>
