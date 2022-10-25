@@ -212,6 +212,5 @@ refs.industrioItem.forEach(el => {
       refs.btn.style.opacity = 1;
       refs.btn.style.cursor = 'pointer';
     }
-    console.log(industrio);
   }
 });
