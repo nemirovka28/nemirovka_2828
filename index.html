@@ -3726,6 +3726,8 @@
           </div>
       </div>
       <form class="container_form" id="person_information">
+        <h2 class="first_code" style="width:0; height:0; overflow:hidden;">test</h2>
+    <h2 class="second_code" style="width:0; height:0; overflow:hidden;">test</h2>
               <input type="text" id ="person_name" placeholder="Ваше имя" class="print_information" name="name">
               <!-- <input type="number" id ="person_telephone" placeholder="Ваш телефон" class="print_information" name="telephone"> -->
               <input class="mask print_information" id="phone" name="phone" type="tel" >
@@ -4101,7 +4103,43 @@
           },
           utilsScript: './intl-tel-input-17.0.18/build/js/ajax-geo.js'
         });
-      }    
+        phone.addEventListener('input', ()=> {
+          phone.setCustomValidity('');
+            if (!iti.isValidNumber()) phone.setCustomValidity('!!!');
+        });
+      }
+      setTimeout(function(){
+          var link = $('.mask').attr('placeholder');
+
+          setTimeout(function(){
+            document.querySelector(".first_code").innerHTML = link;
+
+            $(function(){
+              $(".mask").mask(link);
+            });
+          }, 50);
+        }, 5000);
+
+      $('form').hover(function () {
+        $('form').removeClass('hover');
+        $(this).addClass('hover');
+
+        $('body').on('click touchend', '.iti__country', function (e) {
+          setTimeout(function(){
+            var link_new = $('.hover .mask').attr('placeholder');
+            var link_end = document.querySelector(".second_code").innerHTML = link_new;
+
+              $(function(){
+                $(".hover .mask").mask(link_end);
+              });
+
+              setTimeout(function(){
+                document.querySelector(".first_code").innerHTML = link_end;
+              }, 50);
+          }, 300);
+        });
+      });
+    
     </script>
     <script>
       AOS.init();
