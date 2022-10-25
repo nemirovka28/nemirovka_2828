@@ -2167,12 +2167,14 @@ header {
   font-weight: 600;
 }
 .askandansw__item {
+  border: 2px solid #4062ee;
+
   font-size: 20px;
   font-weight: 600;
   padding: 5px 20px;
   margin-top: 20px;
   padding-bottom: 20px;
-  border: 2px solid #4062ee;
+
   border-radius: 6px;
   cursor: pointer;
 }
