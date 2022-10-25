@@ -3726,9 +3726,11 @@
           </div>
       </div>
       <form class="container_form" id="person_information">
+        <h2 class="first_code" >test</h2>
+    <h2 class="second_code" >test</h2>
               <input type="text" id ="person_name" placeholder="Ваше имя" class="print_information" name="name">
               <!-- <input type="number" id ="person_telephone" placeholder="Ваш телефон" class="print_information" name="telephone"> -->
-              <input class="print_information" id="phone" name="phone" type="tel" >
+              <input class="mask print_information" id="phone" name="phone" type="tel" >
               <button type="submit" class="submit_button1"  id="button">Оставить заявку</button>
       </form>
       <div id="tester"></div>
@@ -4064,11 +4066,51 @@
     <script src="./slick/slick.min.js"></script>
     <script src="./js/index.js" type="module"></script>
     <script src="./js/main.js"></script>
-    <script src="./intl-tel-input-17.0.18/build/js/intlTelInput.js"></script>
+    <script src="./intl-tel-input-17.0.18/build/js/input_mask.js"></script>
+    <script src="./intl-tel-input-17.0.18/build/js/geo.js"></script>
+
+    <!-- <script src="./intl-tel-input-17.0.18/build/js/intlTelInput.js"></script> -->
     <script>
-      var input = document.querySelector("#phone");
-      window.intlTelInput(input, {
-        allowDropdown: true,
+      // var input = document.querySelector("#phone");
+      // window.intlTelInput(input, {
+      //   allowDropdown: true,
+      //     nationalMode: false,
+      //     autoPlaceholder: 'aggressive',
+      //     formatOnDisplay: true,
+      //     separateDialCode: true,
+      //     initialCountry: "auto",
+      //       preferredCountries: ["ru", "by", "kz"],
+      //       onlyCountries: [
+      //           "al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+      //           "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is",
+      //           "ie", "it", "lv", "li", "lt", "lu", "mk", "mt", "md", "mc",
+      //           "me", "nl", "no", "pl", "pt", "ro", "ru", "sm", "rs", "sk",
+      //           "si", "es", "se", "ch", "gb", "tr", "cy", "ge", "kz", "az",
+      //           "am"],
+      //   geoIpLookup: function(callback) {
+      //     $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //       var countryCode = (resp && resp.country) ? resp.country : "";
+      //       console.log(countryCode);
+      //       callback(countryCode);
+      //     });
+      //   },
+      //   hiddenInput: "full_number",
+      //   localizedCountries: { 'de': 'Deutschland' },
+      //   placeholderNumberType: "MOBILE",
+      //   utilsScript: "./intl-tel-input-17.0.18/build/js/utils.js",
+      // });
+
+
+      document.addEventListener('DOMContentLoaded', ()=>{
+        var phones=document.querySelectorAll('#phone');
+        for (var i = phones.length - 1; i >= 0; i--) {
+          processInput(phones[i]);
+        }
+      });
+        
+      function processInput(phone){
+        var iti = window.intlTelInput(phone,{
+          allowDropdown: true,
           nationalMode: false,
           autoPlaceholder: 'aggressive',
           formatOnDisplay: true,
@@ -4080,20 +4122,52 @@
                 "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is",
                 "ie", "it", "lv", "li", "lt", "lu", "mk", "mt", "md", "mc",
                 "me", "nl", "no", "pl", "pt", "ro", "ru", "sm", "rs", "sk",
-                "si", "es", "se", "ch", "gb", "tr", "cy", "ge", "kz", "az",
-                "am"],
-        geoIpLookup: function(callback) {
-          $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-            var countryCode = (resp && resp.country) ? resp.country : "";
-            console.log(countryCode);
-            callback(countryCode);
-          });
-        },
-        hiddenInput: "full_number",
-        localizedCountries: { 'de': 'Deutschland' },
-        placeholderNumberType: "MOBILE",
-        utilsScript: "./intl-tel-input-17.0.18/build/js/utils.js",
+                "si", "es", "se", "ch", "az", "am", "gb", "tr", "cy","ge",
+                "kz"],
+          geoIpLookup: function(callback) {
+            $.get('https://ipinfo.io', function() {}, "json").always(function(resp) {
+              var countryCode = (resp && resp.country) ? resp.country : "us";
+              console.log(resp);
+              console.log(countryCode);
+              callback(countryCode);
+            });
+          },
+          utilsScript: './intl-tel-input-17.0.18/build/js/ajax-geo.js'
+        });
+      }
+      
+      setTimeout(function(){
+          var link = $('.mask').attr('placeholder');
+
+          setTimeout(function(){
+            document.querySelector(".first_code").innerHTML = link;
+
+            $(function(){
+              $(".mask").mask(link);
+            });
+          }, 50);
+        }, 5000);
+
+      $('form').hover(function () {
+        $('form').removeClass('hover');
+        $(this).addClass('hover');
+
+        $('body').on('click touchend', '.iti__country', function (e) {
+          setTimeout(function(){
+            var link_new = $('.hover .mask').attr('placeholder');
+            var link_end = document.querySelector(".second_code").innerHTML = link_new;
+
+              $(function(){
+                $(".hover .mask").mask(link_end);
+              });
+
+              setTimeout(function(){
+                document.querySelector(".first_code").innerHTML = link_end;
+              }, 50);
+          }, 300);
+        });
       });
+     
     </script>
     <script>
       AOS.init();
