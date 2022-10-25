@@ -2017,7 +2017,7 @@ header {
   border-radius: 20px;
   position: relative;
   box-shadow: 0 2.4px 8.4px rgb(183 183 183 / 25%);
-  background-image: url('/img/5.jpg');
+  background-image: url('../img/5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
