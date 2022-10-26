@@ -102,6 +102,7 @@ $('form').hover(function () {
   $('body').on('click touchend', '.iti__country', function (e) {
     setTimeout(function () {
       var link_new = $('.hover .mask').attr('placeholder');
+      console.log('link_new', link_new);
       var link_end = (document.querySelector('.second_code').innerHTML = link_new);
 
       $(function () {
@@ -109,6 +110,7 @@ $('form').hover(function () {
       });
 
       setTimeout(function () {
+        console.log('link_end', link_end);
         document.querySelector('.first_code').innerHTML = link_end;
       }, 50);
     }, 300);

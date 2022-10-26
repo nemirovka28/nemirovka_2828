@@ -2778,6 +2778,7 @@ a {
   height: 300px;
   border-radius: 30px;
   background-color: #170a2e;
+  transition: all 0.3s;
 }
 .popup--active {
   display: block;

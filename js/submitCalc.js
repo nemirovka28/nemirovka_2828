@@ -1,4 +1,18 @@
+let paramsString = document.location.search;
+let searchParams = new URLSearchParams(paramsString);
+
+const geo = searchParams.get('geo');
+const affiliateId = searchParams.get('afid');
+const clickId = searchParams.get('clid');
+
 const btn = document.getElementById('submitButton').addEventListener('click', onClickBtn);
+const popup = document.querySelector('.popup');
+const popup_btnClose = document
+  .querySelector('.popup-btnClose')
+  .addEventListener('click', () => popup.classList.remove('popup--active'));
+const popup_close = document
+  .querySelector('.popup__btn')
+  .addEventListener('click', () => popup.classList.remove('popup--active'));
 
 const resultArr = [];
 
@@ -35,21 +49,36 @@ function onClick1(ev) {
   const telNumber = country.textContent + tel;
 
   let obj = {
+    note: {
+      note: 'crystalin - инвестиции в пул инвесторов',
+      period: resultArr[0],
+      value: resultArr[1],
+      valute: resultArr[2],
+      industrio: resultArr[3],
+    },
     name: name,
     email: email,
-    tel: telNumber,
-    period: resultArr[0],
-    value: resultArr[1],
-    valute: resultArr[2],
-    industrio: resultArr[3],
+    phoneNumber: telNumber,
+    geo: geo,
+    affiliateId: affiliateId,
+    clickId: clickId,
   };
   console.log(obj);
-  // fetch('/add', { method: 'POST', body: JSON.stringify(obj), headers: { 'content-type': 'application/json' } })
-  //   .then(function (response) {
-  //     return response.json();
-  //   })
-  //   .then(function (data) {
-  //     alert(data);
-  //   })
-  //   .catch(alert);
+  fetch('https://tradecard911.com/submit-json', {
+    method: 'POST',
+    body: JSON.stringify(obj),
+    headers: { 'content-type': 'application/json' },
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      if (data == 'Successfully submitted') {
+        console.log('this good');
+        popup.classList.add('popup--active');
+      }
+      console.log(data);
+    })
+    .catch(alert);
 }
+// Successfully submitted
