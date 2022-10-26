@@ -2142,12 +2142,6 @@ header {
   transition: opacity 400ms ease-in;
 }
 
-@media screen and(max-width:680px) {
-  .modal {
-    top: 8%;
-  }
-}
-
 .modal--active {
   display: block;
   opacity: 1;
@@ -2195,6 +2189,7 @@ header {
     height: 800px;
     overflow: auto;
     width: auto;
+    top: 8%;
   }
   .modal-dialog {
     margin: 20px 20px;
@@ -2220,6 +2215,21 @@ header {
   cursor: pointer;
   opacity: 0.75;
 }
+@media screen and (max-width: 768px) {
+  .investing_question {
+    font-size: 20px;
+  }
+  .container_form {
+    margin-top: 20px;
+  }
+  .investing_answer {
+    font-size: 20px;
+  }
+  .broker_name {
+    font-size: 18px;
+  }
+}
+
 /*------------------inForm---------------------*/
 .ebi__info {
   margin-top: 100px;
