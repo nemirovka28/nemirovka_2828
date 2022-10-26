@@ -1791,11 +1791,6 @@ header {
     margin-top: 15px;
   }
 }
-.container_form {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
 .form__group {
   padding: 0 20px;
   font-size: 100%;
@@ -1827,7 +1822,7 @@ header {
   font-size: 24px;
 }
 
-@media screen and (max-width: 1110px) {
+/* @media screen and (max-width: 1110px) {
   .container_form {
     flex-direction: column;
     width: 100%;
@@ -1850,9 +1845,376 @@ header {
     margin-right: 0px;
     margin-bottom: 20px;
   }
+} */
+
+/*--------------------------------------------------------------------------------------*/
+/* Modal and Section */
+.section_modal {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.container_investing {
+  padding: 80px 80px;
+  border: 5px solid #3d5df2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+/* container_information */
+.container_information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.investing_question {
+  font-size: 30px;
+}
+.investing_answer {
+  font-size: 30px;
+  max-width: 490px;
+  color: #3d5df2;
+  margin: 0px;
+  font-weight: 600;
+}
+.container_broker {
+  display: flex;
+  margin-right: 50px;
 }
 
-/*22222222222222222222222222*/
+.img_brok {
+  border-radius: 50%;
+  width: 58px;
+}
+.image_broker {
+  position: relative;
+}
+.metka {
+  width: 13px;
+  height: 13px;
+  top: 1px;
+  right: -5px;
+  position: absolute;
+  background: #27ae60;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.broker_info {
+  margin-left: 25px;
+}
+.broker_name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1em;
+  color: #3d5df2;
+  margin: 0;
+}
+.broker_experience {
+  font-size: 16px;
+  margin-top: 8px;
+  opacity: 0.5;
+}
+
+/*----------------------container_form---------------------------*/
+
+.container_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+.print_informationEmail {
+  padding: 15px 15px;
+  font-size: 18px;
+
+  border: 1px solid #3d5df2;
+  border-radius: 6px;
+}
+.print_informationEmail::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+.print_information {
+  padding: 15px 15px;
+
+  font-size: 18px;
+  border: 1px solid #3d5df2;
+  border-radius: 6px;
+}
+.person_information::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+.print_informationTel {
+  padding: 15px 15px;
+  font-size: 18px;
+
+  border: 1px solid #3d5df2;
+  border-radius: 6px;
+}
+.person_informationTel::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+.submit_button1 {
+  padding: 15px 20px;
+  color: white;
+  font-size: 18px;
+  background-color: #3d5df2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit_button1:hover {
+  background-color: #1d3fd9;
+}
+@media screen and (max-width: 1112px) {
+  .print_information {
+    width: 430px;
+  }
+  .print_informationEmail {
+    width: 430px;
+    margin-top: 15px;
+  }
+
+  .print_informationTel {
+    width: 460px;
+    margin-top: 15px;
+  }
+  .submit_button1 {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 562px) {
+  .print_information {
+    width: 230px;
+  }
+
+  .print_informationEmail {
+    width: 230px;
+    margin-top: 15px;
+  }
+
+  .print_informationTel {
+    width: 260px;
+    margin-top: 15px;
+  }
+}
+
+/*------------------inForm---------------------*/
+
+.container_informationInForm {
+  display: flex;
+  justify-content: space-between;
+}
+.container_brokerinForm {
+  display: flex;
+  margin-right: 50px;
+}
+
+.print_informationEmailinForm {
+  padding: 15px 15px;
+  font-size: 18px;
+  background-color: #170a2e;
+  border: 1px solid #3d5df2;
+  border-radius: 6px;
+  color: white;
+}
+.print_informationEmailinForm ::placeholder {
+  font-size: 20px;
+  color: white;
+}
+.print_informationinForm {
+  padding: 15px 15px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid #3d5df2;
+  background-color: #170a2e;
+  border-radius: 6px;
+}
+.person_informationinForm ::placeholder {
+  font-size: 20px;
+  color: white;
+}
+.print_informationTelinForm {
+  padding: 15px 15px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid #3d5df2;
+  background-color: #170a2e;
+  border-radius: 6px;
+}
+.person_informationTelinForm ::placeholder {
+  font-size: 20px;
+  color: white;
+}
+.submit_button {
+  padding: 15px 20px;
+  color: white;
+  font-size: 18px;
+
+  background-color: #3d5df2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.submit_button:hover {
+  background-color: #1d3fd9;
+}
+
+@media screen and (max-width: 1112px) {
+  .container_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .print_informationinForm {
+    width: 430px;
+  }
+
+  .print_informationEmailinForm {
+    width: 430px;
+    margin-top: 15px;
+  }
+
+  .print_informationTelinForm {
+    width: 460px;
+    margin-top: 15px;
+  }
+  .container_broker {
+    margin-right: 0px;
+  }
+  .submit_button {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container_informationInForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container_brokerinForm {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  .container_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .print_informationinForm {
+    width: 230px;
+  }
+
+  .print_informationEmailinForm {
+    width: 230px;
+    margin-top: 15px;
+  }
+
+  .print_informationTelinForm {
+    width: 260px;
+    margin-top: 15px;
+  }
+}
+
+/*--------------------------------MODAL--------------------------------*/
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.modal--active {
+  display: block;
+  opacity: 1;
+  z-index: 100000;
+}
+.investing {
+  padding: 30px 30px;
+  border: 5px solid #3d5df2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  max-width: 100%;
+  margin: 10px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+}
+.modal-content {
+  position: relative;
+  background-color: #170a2e;
+  color: white;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (max-width: 1254px) {
+  .modal {
+    height: 800px;
+    overflow: auto;
+    width: auto;
+  }
+  .modal-dialog {
+    margin: 20px 20px;
+  }
+}
+.close {
+  float: right;
+  font-family: sans-serif;
+  padding-top: 30px;
+  padding-right: 50px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+/*------------------inForm---------------------*/
 .ebi__info {
   margin-top: 100px;
 }
@@ -1950,103 +2312,6 @@ header {
 }
 .person_position {
   margin: 0px;
-}
-
-.container_referalProgram {
-  display: flex;
-  flex-direction: row;
-  margin-top: 55px;
-}
-.referal {
-  margin-top: 120px;
-}
-.referral_Program {
-  display: flex;
-  flex: 1 0.5;
-  min-width: 335px;
-  flex-direction: column;
-  text-align: start;
-  align-items: flex-start;
-  justify-content: start;
-  margin-right: 35px;
-}
-.referal_text {
-  font-size: 20px;
-}
-.referral_title {
-  font-size: 40px;
-}
-
-.referral_title span {
-  color: #3d5df2;
-  text-decoration: underline;
-}
-@media screen and (max-width: 966px) {
-  .referal {
-    margin-top: 20px;
-  }
-  .container_referalProgram {
-    display: flex;
-    flex-direction: column;
-    margin-top: 55px;
-  }
-  .referral_Program {
-    display: flex;
-    flex: 1 0.5;
-    min-width: 335px;
-    flex-direction: column;
-    text-align: start;
-    align-items: flex-start;
-    justify-content: start;
-    margin-right: 35px;
-    margin-bottom: 25px;
-  }
-  .referal_text {
-    font-size: 16px;
-    padding-right: 51px;
-  }
-  .referral_title {
-    font-size: 32px;
-  }
-
-  .referral_title span {
-    color: #3d5df2;
-    text-decoration: underline;
-  }
-}
-.referral_button {
-  color: white;
-  background-color: #3d5df2;
-  font-size: 20px;
-  width: 250px;
-  height: 71px;
-  border-radius: 5px;
-  border: none;
-  margin-top: 50px;
-  cursor: pointer;
-}
-.referral_button:hover {
-  background-color: var(--secondary);
-}
-.referral_capital {
-  border-radius: 20px;
-  position: relative;
-  box-shadow: 0 2.4px 8.4px rgb(183 183 183 / 25%);
-  background-image: var(--gradient-reverse);
-}
-
-.referral_capital_module {
-  background: white;
-}
-.referral_capital_module {
-  text-align: start;
-  justify-content: start;
-  padding: 28px 38px 20px;
-}
-.module_title {
-  color: #110a3a;
-  font-size: 30px;
-  text-decoration: none;
 }
 
 /*  */
@@ -2241,7 +2506,7 @@ header {
 .aslandansw__btn:hover {
   background-color: #2841ae;
 }
-.aslandansw__consultation {
+/* .aslandansw__consultation {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2286,7 +2551,7 @@ header {
 .aslandansw__number:hover {
   opacity: 0.6;
   cursor: pointer;
-}
+} */
 @media screen and (max-width: 1100px) {
   .askandansw__content {
     padding-left: 20px;
@@ -2321,188 +2586,6 @@ header {
   transform: rotate(180deg);
   transition: all 0.3s;
 }
-/*--------------------------------------------------------------------------------------*/
-/* Modal and Section */
-.section_modal {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 15px;
-  overflow: hidden;
-}
-.container_investing {
-  padding: 80px 80px;
-  border: 5px solid #3d5df2;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  box-sizing: border-box;
-}
-/* container_information */
-.container_information {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.investing_question {
-  font-size: 30px;
-}
-.investing_answer {
-  font-size: 30px;
-  max-width: 490px;
-  color: #3d5df2;
-  margin: 0px;
-  font-weight: 600;
-}
-.container_broker {
-  display: flex;
-  margin-top: 70px;
-}
-
-.img_brok {
-  border-radius: 50%;
-  width: 58px;
-}
-.image_broker {
-  position: relative;
-}
-.metka {
-  width: 13px;
-  height: 13px;
-  top: 1px;
-  right: -5px;
-  position: absolute;
-  background: #27ae60;
-  border: 2px solid white;
-  border-radius: 50%;
-  display: inline-block;
-}
-.broker_info {
-  margin-left: 25px;
-}
-.broker_name {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.1em;
-  color: #3d5df2;
-  margin: 0;
-}
-.broker_experience {
-  font-size: 16px;
-  margin-top: 8px;
-  opacity: 0.5;
-}
-/* container_form */
-.container_form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 64px;
-}
-.print_informationEmail {
-  padding: 15px 15px;
-  font-size: 18px;
-  width: 550px;
-  margin-top: 30px;
-  border: 1px solid #3d5df2;
-  border-radius: 6px;
-}
-.print_informationEmail::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-}
-.print_information {
-  padding: 15px 15px;
-  width: 550px;
-  font-size: 18px;
-  border: 1px solid #3d5df2;
-  border-radius: 6px;
-}
-.person_information::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-}
-.print_informationTel {
-  padding: 15px 15px;
-  margin-top: 30px;
-  font-size: 18px;
-  width: 582px;
-  border: 1px solid #3d5df2;
-  border-radius: 6px;
-}
-.person_informationTel::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-}
-.submit_button {
-  padding: 15px 20px;
-  color: white;
-  font-size: 18px;
-  margin-top: 20px;
-  width: 580px;
-  background-color: #3d5df2;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.submit_button:hover {
-  background-color: #1d3fd9;
-}
-
-/*------------------inForm---------------------*/
-
-.print_informationEmailinForm {
-  padding: 15px 15px;
-  font-size: 18px;
-  width: 550px;
-  margin-top: 30px;
-  border: 1px solid #3d5df2;
-  border-radius: 6px;
-}
-.print_informationEmailinForm ::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-}
-.print_informationinForm {
-  padding: 15px 15px;
-  width: 550px;
-  font-size: 18px;
-  border: 1px solid #3d5df2;
-  border-radius: 6px;
-}
-.person_informationinForm ::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-}
-.print_informationTelinForm {
-  padding: 15px 15px;
-  margin-top: 30px;
-  font-size: 18px;
-  width: 582px;
-  border: 1px solid #3d5df2;
-  border-radius: 6px;
-}
-.person_informationTelinForm ::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-}
-.submit_button1 {
-  padding: 15px 20px;
-  color: white;
-  font-size: 18px;
-  margin-top: 20px;
-  width: 580px;
-  background-color: #3d5df2;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.submit_button1:hover {
-  background-color: #1d3fd9;
-}
-
-/*------------------inForm---------------------*/
 
 /*list_advantages  */
 .section_form {
@@ -2538,21 +2621,8 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .container_form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 40px;
-  }
-  .print_information {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 18px 0px 18px 3px;
-  }
-  .submit_button,
-  .submit_button1 {
-    width: 100%;
+  .container_broker {
+    margin-top: 20px;
   }
   .list_advantages {
     display: flex;
@@ -2675,94 +2745,6 @@ a {
   .copyright {
     text-align: center;
   }
-}
-
-/*--------------------------------MODAL--------------------------------*/
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-}
-
-.modal--active {
-  display: block;
-  opacity: 1;
-  z-index: 100000;
-}
-.investing {
-  padding: 80px 50px;
-  border: 5px solid #3d5df2;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  box-sizing: border-box;
-}
-.modal:target {
-  opacity: 1;
-  pointer-events: auto;
-  overflow-y: auto;
-}
-.modal-dialog {
-  position: relative;
-  max-width: 100%;
-  margin: 10px;
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 1200px;
-    margin: 20px auto;
-  }
-}
-.modal-content {
-  position: relative;
-  background-color: #fff;
-  border-radius: 0.3rem;
-  outline: 0;
-}
-
-@media (min-width: 768px) {
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-}
-@media screen and (max-width: 1254px) {
-  .modal {
-    height: 800px;
-    overflow: auto;
-    width: auto;
-  }
-  .modal-dialog {
-    margin: 20px 20px;
-  }
-}
-.close {
-  float: right;
-  font-family: sans-serif;
-  padding-top: 30px;
-  padding-right: 50px;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 0.5;
-  text-decoration: none;
-}
-.close:focus,
-.close:hover {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.75;
 }
 
 /*----------------------Popup-----------------------------*/

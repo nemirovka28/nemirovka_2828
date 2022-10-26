@@ -20,11 +20,11 @@
   /* margin-top: 0 !important; */
   margin-bottom: 0 !important;
   padding-right: 36px;
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 .iti__flag-container {
   position: absolute;
-  top: 30px;
+  top: 0px;
   bottom: 0;
   right: 0;
   padding: 1px;
@@ -67,6 +67,7 @@
 .iti__country-list--dropup {
   bottom: 100%;
   margin-bottom: -1px;
+  color: black;
 }
 @media (max-width: 500px) {
   .iti__country-list {
@@ -85,6 +86,7 @@
 .iti__country {
   padding: 5px 10px;
   outline: none;
+  color: black;
 }
 .iti__dial-code {
   color: #999;
@@ -115,6 +117,14 @@
 .iti--separate-dial-code .iti__flag-container {
   right: auto;
   left: 0;
+}
+@media screen and (max-width: 1112px) {
+  .iti--allow-dropdown .iti__flag-container,
+  .iti--separate-dial-code .iti__flag-container {
+    right: auto;
+    left: 0;
+    top: 17px;
+  }
 }
 .iti--allow-dropdown .iti__flag-container:hover {
   cursor: pointer;
