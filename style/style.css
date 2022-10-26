@@ -2781,6 +2781,9 @@ a {
   border-radius: 30px;
   background-color: #170a2e;
 }
+.popup--active {
+  display: block;
+}
 @media screen and (max-width: 928px) {
   .popup {
     right: 20%;
