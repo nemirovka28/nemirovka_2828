@@ -517,18 +517,24 @@ header {
   }
   .gr1 {
     position: absolute;
-    top: -188px;
-    right: -316px;
+    top: -246px;
+    right: -144px;
+    width: 1300px;
+    height: 1300px;
   }
   .gr2 {
     position: absolute;
-    top: -255px;
-    right: -421px;
+    top: -420px;
+    right: -471px;
+    width: 1300px;
+    height: 1300px;
   }
   .gr3 {
     position: absolute;
-    top: -358px;
-    right: -985px;
+    top: -235px;
+    right: -148px;
+    width: 1300px;
+    height: 1300px;
   }
 }
 .header__hero-btn {
@@ -1608,6 +1614,11 @@ header {
 }
 
 /*-------------------------------REVIEWS----------------------------------------------*/
+.container__reviews {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .reviews {
   margin-bottom: 120px;
 }
@@ -1687,7 +1698,8 @@ header {
   display: flex;
   flex-direction: column;
   padding: 10px 60px 10px 60px;
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+  /* box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%); */
+  box-shadow: 0 15px 20px rgb(0 0 0 / 5%);
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (max-width: 578px) {
