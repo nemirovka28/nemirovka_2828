@@ -2142,6 +2142,12 @@ header {
   transition: opacity 400ms ease-in;
 }
 
+@media screen and(max-width:680px) {
+  .modal {
+    top: 8%;
+  }
+}
+
 .modal--active {
   display: block;
   opacity: 1;
