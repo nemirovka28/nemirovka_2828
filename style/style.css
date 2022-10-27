@@ -2215,7 +2215,7 @@ header {
   font-size: 34px;
   font-weight: 700;
   line-height: 1;
-  color: #000;
+  color: #fdf8f8;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
   text-decoration: none;
@@ -2506,6 +2506,7 @@ header {
   font-weight: 600;
   padding-right: 120px;
 }
+
 .askandansw__item-content--list {
   list-style: circle;
   padding-right: 10px;
@@ -2534,52 +2535,6 @@ header {
 .aslandansw__btn:hover {
   background-color: #2841ae;
 }
-/* .aslandansw__consultation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.aslandansw__cool {
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
-  position: relative;
-}
-.aslandansw__cool:before {
-  background-color: var(--white);
-  content: '';
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  left: 42px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 80px;
-}
-.aslandansw__cool:after {
-  background-color: var(--white);
-  content: '';
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  left: 249px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 80px;
-}
-.aslandansw__number {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
-}
-.aslandansw__number:hover {
-  opacity: 0.6;
-  cursor: pointer;
-} */
 @media screen and (max-width: 1100px) {
   .askandansw__content {
     padding-left: 20px;
@@ -2609,7 +2564,14 @@ header {
     max-width: 25px;
     max-height: 25px;
   }
+  .askandansw__item-content--title {
+    padding-right: 20px;
+  }
+  .askandansw__item-content--list {
+    padding-left: 10px;
+  }
 }
+
 .rotate--active {
   transform: rotate(180deg);
   transition: all 0.3s;
